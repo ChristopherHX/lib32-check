@@ -32,7 +32,7 @@ build() {
   export CXX='g++ -m32'
   export PKG_CONFIG_PATH='/usr/lib32/pkgconfig'
 
-  ./configure --prefix=/usr --disable-static \
+  ./configure --prefix=/usr --disable-static --disable-dependency-tracking \
     --libdir=/usr/lib32 
   make
 }
